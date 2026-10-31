@@ -46,6 +46,8 @@ gh pr merge --squash --delete-branch
 O PR apresenta a mudança para revisão. O merge integra seu conteúdo à `main`;
 fechar um PR sem merge não inclui a alteração no histórico principal.
 
+As orientações para novas alterações estão em [CONTRIBUINDO.md](CONTRIBUINDO.md).
+
 ## Avaliação
 
 Após o setup e o login com a conta cadastrada na turma, execute o autograder
