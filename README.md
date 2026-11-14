@@ -62,20 +62,21 @@ A operação documental do caso é organizada em oito etapas, cinco camadas,
 três linhas divisórias e sete fail points. A pesquisa contém duas auditorias
 e revisões rastreadas; a autoentrevista técnica tem doze rodadas.
 
-- [A_meta_prompt.md](A_meta_prompt.md) — meta-prompt para a pesquisa de operação.
-- [B_relatorio_assistente_v1.md](B_relatorio_assistente_v1.md) — pesquisa inicial.
-- [B_relatorio_auditoria_v1.md](B_relatorio_auditoria_v1.md) — primeira auditoria.
-- [B_relatorio_assistente_v2.md](B_relatorio_assistente_v2.md) — revisão após auditoria 1.
-- [B_relatorio_auditoria_v2.md](B_relatorio_auditoria_v2.md) — segunda auditoria.
-- [B_relatorio_assistente_v3.md](B_relatorio_assistente_v3.md) — pesquisa final.
-- [C_grill_transcript.md](C_grill_transcript.md) — autoentrevista e decisões.
-- [C_blueprint_asis.md](C_blueprint_asis.md) — matriz AS-IS com camadas, linhas e falhas.
-- [D_diagrama_asis.md](D_diagrama_asis.md) — relações e alternativas da jornada.
+- [A_meta_prompt.md](exercicios/3.1/A_meta_prompt.md) — meta-prompt para a pesquisa de operação.
+- [B_relatorio_assistente_v1.md](exercicios/3.1/B_relatorio_assistente_v1.md) — pesquisa inicial.
+- [B_relatorio_auditoria_v1.md](exercicios/3.1/B_relatorio_auditoria_v1.md) — primeira auditoria.
+- [B_relatorio_assistente_v2.md](exercicios/3.1/B_relatorio_assistente_v2.md) — revisão após auditoria 1.
+- [B_relatorio_auditoria_v2.md](exercicios/3.1/B_relatorio_auditoria_v2.md) — segunda auditoria.
+- [B_relatorio_assistente_v3.md](exercicios/3.1/B_relatorio_assistente_v3.md) — pesquisa final.
+- [C_grill_transcript.md](exercicios/3.1/C_grill_transcript.md) — autoentrevista e decisões.
+- [C_blueprint_asis.md](exercicios/3.1/C_blueprint_asis.md) — matriz AS-IS com camadas, linhas e falhas.
+- [D_diagrama_asis.md](exercicios/3.1/D_diagrama_asis.md) — relações e alternativas da jornada.
 
-Os nove entregáveis estão na raiz para validação e submissão. O marcador
-[`.autograde-exercise`](.autograde-exercise) contém `3.1`. Execute
-`autograde validar 3.1` na raiz; o arquivamento do exercício será feito após
-confirmar 100/100 no histórico oficial.
+**Nota oficial: 100/100 na primeira submissão.** A avaliação foi executada
+com os nove arquivos na raiz, na entrega do [PR #4](https://github.com/contatomaycon/transformacao-digital/pull/4).
+Somente depois da confirmação no histórico oficial, os arquivos e o marcador
+foram movidos, sem alterações de conteúdo, para
+[exercicios/3.1](exercicios/3.1/README.md), conforme a organização solicitada.
 
 ## Colaboração pelo GitHub CLI
 
@@ -111,14 +112,14 @@ autograde validar 1.1
 autograde validar 1.2
 autograde validar 1.3
 autograde validar 1.4
-autograde validar 3.1
 autograde notas
 ```
 
 Nos exercícios 1.x, `validar` solicita uma reflexão e verifica o repositório
-no GitHub. No 3.1, coleta os nove artefatos locais da raiz. O comando mostra o boletim
-e pergunta se deve registrar a nota; `autograde notas` consulta os resultados
-oficiais dos envios.
+no GitHub. Os exercícios de artefatos coletam os arquivos no diretório em
+que o comando é executado. As entregas concluídas do 2.1 e 3.1 estão
+arquivadas em suas pastas; a submissão do 3.1 foi feita na raiz antes do
+arquivamento. `autograde notas` consulta os resultados oficiais dos envios.
 
 ## Referência
 
