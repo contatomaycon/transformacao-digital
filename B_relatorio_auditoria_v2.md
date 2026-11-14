@@ -1,78 +1,75 @@
-# Segunda auditoria — testar fronteiras e continuidade do caso
+# Auditoria 2 — saídas condicionais, falhas diferentes e barreiras de entrada
 
-**Documento examinado:** `B_relatorio_assistente_v2.md`.
-**Revisor:** agente Codex, revisão crítica posterior à v2, 13/11/2026.
-O objetivo desta rodada é verificar os achados anteriores e procurar
-problemas remanescentes de conteúdo, sem repetir a primeira auditoria.
+**Objeto:** `B_relatorio_assistente_v2.md`. **Revisor:** agente Codex,
+segunda revisão crítica, 14/11/2026. O exame verifica os tratamentos
+anteriores e procura lacunas remanescentes relevantes para o AS-IS.
 
-## 1. Verificação dos quatro achados anteriores
+## 1. Conferência da auditoria anterior
 
-| Achado da auditoria 1 | Verificação na v2 | Resultado |
+| Achado | O que a v2 fez | Situação |
 | --- | --- | --- |
-| A1-01 | A07 é MTE e A08 é Dataprev; a seção E2 distingue competência e tecnologia | Resolvido no inventário. Manter essa separação no mapa final. |
-| A1-02 | O texto atribui a métrica ao estudo de 2025 e mantém cálculo e causalidade em aberto | Resolvido como delimitação de evidência. A validação da base continua uma pendência legítima. |
-| A1-03 | A05/A06 são funções a confirmar; há proposta de registro de encaminhamento | Parcialmente resolvido: falta critério de aceite e fechamento do encaminhamento, detalhado em A2-02. |
-| A1-04 | Foram adicionados encarregado e intermediação acessível, com fontes | Inclusão resolvida. A cobertura do canal acessível ainda pede uma fronteira mais precisa, conforme A2-01. |
+| A1-01 | Separou cinco dimensões por etapa e distinguiu N1 falando de N1 consultando | Resolvido como estrutura da pesquisa; preservar na matriz final |
+| A1-02 | Criou E2/E3 separadas e marcou mecanismo de identificação como L | Resolvido; não converter CPF em autenticação forte na Parte C |
+| A1-03 | Criou F01–F06 com etapas e efeitos, sem inventar frequência ou SLA | Resolvido em nível geral; F05 ainda reúne exceções diferentes, conforme A2-02 |
+| A1-04 | Incluiu fontes oficiais do programa, dados e usuário e limitou normas internas | Resolvido no enquadramento; não equivale a auditoria de conformidade |
 
-## A2-01 — A cobertura do ICOM não pode ser estendida à URA sem evidência
+## A2-01 — As alternativas de saída ainda cabem em uma única coluna
 
-**Trecho:** “A12 pode intermediar a comunicação de pessoas surdas com canais
-atendidos pela CAIXA”. A fonte institucional é mais específica: a
-[página de Libras da CAIXA](https://www.caixa.gov.br/atendimento/libras/Paginas/default.aspx)
-descreve interpretação no SAC e na rede física. Ela não comprova tradução
-direta dos menus do 0800 726 0207 nem um caminho já integrado para consultar
-o Seguro-Desemprego nesse canal.
+**Trecho:** “E8 — Encerra, procura destino ou volta a ligar”. A v2 avisa
+que a jornada é condicional, porém não define como essa condição será
+transportada à matriz e ao diagrama. Há risco de desenhar E1 → E8 como
+caminho obrigatório, exigindo atendimento humano e recontato em toda
+chamada, ou de confundir fim de ligação com dúvida resolvida.
 
-O problema não é a existência do ICOM, que está documentada, mas a relação
-que o mapa pode sugerir. Uma seta sem qualificação poderia prometer acesso
-a uma função que não foi verificada. A v3 deve manter A12 como ator de
-fronteira para comunicação acessível, identificar os canais documentados
-e tratar a integração com a jornada focal como proposta a validar. Para
-quem não tem internet ou dispositivo compatível, a alternativa também deve
-permanecer requisito de desenho, não solução supostamente universal.
+O estudo, páginas PDF 13–14, distingue resposta conclusiva e resposta
+inconclusiva, além da recorrência. A v3 precisa explicitar a saída após
+resposta automática, o ramo humano quando buscado e os resultados após
+orientação. Deve mostrar retorno à tentativa de contato como possibilidade,
+não como porcentagem de pessoas ou desfecho obrigatório. São classificações
+analíticas de resultados, não estados implantados em um CRM ou protocolo
+compartilhado. **Aceite:** regras textuais de ramificação, sem inventar
+um acompanhamento integrado que só foi proposto no 2.1.
 
-## A2-02 — Enviar ao destino não equivale a concluir o atendimento
+## A2-02 — Indisponibilidade e divergência não são o mesmo fail point
 
-**Trecho:** “um registro proposto de encaminhamento contém motivo, destino,
-identificador do atendimento e responsável pelo seguimento”. A v2 melhorou
-a rastreabilidade, mas não responde o que fazer se o destino não recebe o
-caso ou se o cidadão continua sem orientação. Há risco de trocar o antigo
-“procure outro órgão” por um registro administrativo que apenas documenta
-a mesma transferência de problema.
+**Trecho:** F05 reúne “Sistema indisponível ou dados divergentes”. Nos
+dois casos o usuário pode receber orientação insuficiente, mas o trabalho
+de bastidor é diferente. Na indisponibilidade, não se obtém a informação;
+na divergência, o problema é a incompatibilidade entre informações ou
+cadastros. Agrupar as ocorrências pode levar a atribuir ambas a suporte
+técnico ou a inventar que o atendente pode corrigir um dado externo.
 
-A falha é relevante para o propósito do mapa: o estudo, páginas PDF 6–7,
-descreve justamente a circulação entre instituições. É necessário definir
-estados e limites de encerramento, preservar a competência do MTE e manter
-um responsável pelo seguimento do atendimento CAIXA. A v3 deve distinguir
-resposta compreendida, encaminhamento pendente, recebimento confirmado e
-abandono. Isso será uma recomendação analítica; não comprovação de protocolo
-compartilhado já implantado. O identificador proposto deve ser de atendimento,
-com dados mínimos, sem expor CPF ou bases pessoais no trabalho público.
+R2, página PDF 14, descreve as ocorrências separadamente. A v3 deve
+desdobrá-las, explicitar o efeito percebido e manter desconhecida a
+causa de infraestrutura ou o canal exato de correção quando a fonte não
+o documenta. Um diagrama de consulta com resultado indisponível não pode
+mostrar o mesmo dado como consultado com sucesso na etapa seguinte.
+**Aceite:** identificadores diferentes, ramo de falha coerente e limite
+de competência preservado.
 
-## A2-03 — Os incentivos continuam genéricos para orientar engajamento
+## A2-03 — A barreira de acesso pode ocorrer antes de navegar no menu
 
-**Trecho:** a seção “Dependências e interesses a discutir” identifica
-objetivos de A01 e A10, mas não oferece uma priorização comparável para o
-conjunto dos atores. Saber que uma unidade está envolvida é diferente de
-saber como ela pode facilitar ou bloquear uma mudança. A tabela contém
-categorias e limites, mas não conecta poder, interesse e possíveis tensões
-a ações de escuta ou validação.
+**Trechos:** F01 foi ligado apenas a E2 e E1 apresenta “entrada na URA”.
+O levantamento ainda pode invisibilizar quem não chega a ouvir ou
+compreender o canal, apesar de a aula exigir perspectiva de quem consome
+e de o estudo descrever barreiras auditivas e de interação.
 
-A [aula 2](https://github.com/alexlopespereira/idp_governodigital/blob/main/pdfs/aula02.pdf),
-páginas PDF 34–40, pede propósito, diversidade, incentivos e relações. A v3
-deve acrescentar uma leitura qualitativa de poder e interesse, explicando
-que se trata de hipótese e não de atitude medida. Precisa associar cada
-grupo a uma ação de engajamento: por exemplo, validar decisões com o MTE,
-ouvir atendentes sobre encaminhamentos e ouvir usuários sobre compreensão
-e barreiras. Não se deve presumir resistência pessoal nem usar a matriz
-para reduzir cidadãos a destinatários de comunicação.
+A aula anexada, páginas PDF 31, 35 e 40, destaca a interface acessível e
+as pistas percebidas. A v3 deve admitir que a barreira pode atingir E1/E2,
+sem afirmar que mediu pessoas excluídas ou que existe alternativa integrada
+já resolvida. Convém distinguir a descrição do estudo sobre o menu da
+inferência sobre impedimento anterior à chamada. Também é necessário
+lembrar que uma evidência física no telefone pode ser perceptível por
+áudio/teclado, e não necessariamente um documento de papel.
+**Aceite:** limite de evidência e fail point transversal explícitos, sem
+criar uma etapa TO-BE de acessibilidade para preencher a lacuna.
 
-## 2. Critério de aceite da próxima revisão
+## 2. Condições para a versão final
 
-A v3 deve registrar um delta identificado para cada um dos três achados,
-mantendo os quatro tratamentos da auditoria 1. O aceite documental será:
-cobertura acessível delimitada; fluxo de seguimento com responsável,
-entrada e saída; e estratégia de engajamento com limites de evidência.
-Nenhum desses ajustes exige inventar uma segunda pesquisa independente ou
-confirmar operação real que não foi observada. O ganho esperado é um mapa
-de relações decidido e auditável, com lacunas institucionais ainda visíveis.
+A v3 deve indicar um delta para cada gatilho A2-01 a A2-03, manter a
+separação das cinco camadas e preservar os quatro tratamentos de A1.
+As mudanças precisam alterar o raciocínio operacional, não só títulos:
+saídas e loops coerentes; consulta sem informação separada de informação
+divergente; e possibilidade de exclusão antes da navegação. Não é
+necessário inventar mecanismo técnico, autenticação ou entrevista de campo
+para preencher um desconhecido que foi corretamente identificado.
