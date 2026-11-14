@@ -1,241 +1,201 @@
-# Registro integral da autoentrevista `/grill-me`
+# Autoentrevista `/grill-me` — decisões do Service Blueprint AS-IS
 
-**Data:** 13/11/2026. **Base:** [pesquisa final v3](B_relatorio_assistente_v3.md).
-**Entrevistador e respondente:** agente Codex, com decisões delegadas pelo
-aluno. O pedido foi executar o trabalho autonomamente, inclusive responder
-o grill. Este registro documenta a autoentrevista técnica; as respostas são
-do agente exercendo essa delegação.
+**Data:** 14/11/2026. **Contexto:** [pesquisa v3](B_relatorio_assistente_v3.md),
+aula04.pdf fornecida e [mapa do 2.1](https://github.com/contatomaycon/transformacao-digital/blob/main/exercicios/2.1/C_mapa_atores.md).
+**Entrevistador/respondente:** agente Codex, executando as decisões
+delegadas pelo aluno. Registro integral da autoentrevista técnica, com uma
+pergunta por rodada. As decisões G01–G12 orientam a matriz e o diagrama.
 
-**Método:** `grill-me` e `grilling`, adaptadas para uma pergunta por rodada,
-conforme o tutorial. Cada resposta fecha uma decisão e determina a próxima
-pergunta. Foram utilizadas a v3, suas fontes e a aula 2, páginas PDF 31–40.
-As decisões D01–D13 serão citadas no mapa final.
+## Rodada 1 — Que AS-IS podemos afirmar?
 
-## Rodada 1 — Propósito antes da lista
+**Pergunta:** Devemos apresentar o fluxo como observação da URA hoje ou
+como diagnóstico documental? Recomendo delimitar o período e preservar o
+serviço do 2.1, sem importar suas propostas como fatos.
 
-**Pergunta do entrevistador:** O mapa deve descrever toda a política do
-Seguro-Desemprego ou o atendimento informacional pela URA CAIXA? Qual
-evento inicia e qual resultado encerra a jornada? Recomendo o segundo
-recorte, pois ampliar para concessão, pagamento e recurso dilui a
-responsabilidade pelo atendimento.
+**Resposta:** Escolho o **Atendimento ao Seguro-Desemprego pela URA CAIXA**,
+CAIXA Cidadão 0800 726 0207. O AS-IS será o descrito no estudo com dados
+de 2025, pesquisado documentalmente em 14/11/2026. Não houve ligação de
+teste nem observação de bastidores. Fontes oficiais atuais delimitam
+competências, não comprovam todos os passos internos. O objeto começa
+na necessidade de informação e termina no contato, no encaminhamento ou
+na tentativa seguinte; não inclui conceder o benefício. **G01:** recorte
+informacional e temporalidade explícitos em C e D.
 
-**Resposta do respondente:** Adoto o atendimento informacional do
-Seguro-Desemprego pela URA CAIXA, 0800 726 0207. A entrada é a tentativa de
-obter orientação por telefone. A saída é orientação compreendida, um
-encaminhamento com estado conhecido ou interrupção identificada. Concessão
-e recurso são dependências externas, não decisões do menu. O propósito é
-reduzir a transferência informal do problema ao cidadão, tornando visíveis
-as competências e quem acompanha a orientação. **D01:** recorte do canal e
-distinção entre encerrar a chamada e resolver a dúvida.
+## Rodada 2 — Quais etapas pertencem à ótica do cidadão?
 
-## Rodada 2 — Quem precisa estar no mapa?
+**Pergunta:** Que sequência deve orientar as colunas da matriz, antes de
+listar departamentos? Recomendo fixar as oito etapas da v3.
 
-**Pergunta do entrevistador:** Com o recorte escolhido, quais atores são
-necessários, incluindo os menos visíveis? Recomendo preservar as treze
-identidades da v3 e distinguir funções internas de organizações externas.
+**Resposta:** Adoto exatamente: **E1 Busca informação e liga**;
+**E2 Ouve menu e escolhe opção**; **E3 Informa identificação solicitada**;
+**E4 Recebe resposta automática**; **E5 Solicita pessoa e aguarda**;
+**E6 Explica demanda ao atendente**; **E7 Recebe orientação ou
+encaminhamento**; **E8 Encerra, procura destino ou volta a ligar**.
+Não são oito etapas obrigatórias de toda ligação. A experiência começa
+antes do balcão ou da consulta interna. Separar E2 e E3 permite tratar a
+falha de identificação sem confundi-la com escolha de menu. **G02:**
+nomes e IDs estáveis nas colunas, falhas e diagrama.
 
-**Resposta do respondente:** O inventário fechado é: **A01 Cidadão**;
-**A02 URA CAIXA**; **A03 Atendente N1**; **A04 Analista CAIXA N2**;
-**A05 Gestor do serviço CAIXA**; **A06 Suporte técnico da URA**;
-**A07 MTE**; **A08 Dataprev**; **A09 Rede SINE/SRTE**;
-**A10 Ouvidoria CAIXA**; **A11 Encarregado de dados CAIXA**;
-**A12 Intermediação de acessibilidade ICOM**; **A13 Controle externo TCU**.
-Eles cobrem usuário, automação, trabalho humano, gestão, tecnologia,
-competência administrativa, atendimento complementar, escuta, proteção e
-controle. Gestão e suporte são funções analíticas com unidade ainda a
-confirmar. Não nomearei prestador de tecnologia sem contrato público
-verificado. **D02:** treze atores distintos, identificados por ID estável.
+## Rodada 3 — Quais atores e funções entram na operação?
 
-## Rodada 3 — Automatizado significa inteligência artificial?
+**Pergunta:** Quais atores do 2.1 são necessários ao blueprint e quais
+dependências não equivalem a atendentes ao vivo? Recomendo um recorte
+operacional, sem inserir toda a governança em cada chamada.
 
-**Pergunta do entrevistador:** A URA CAIXA deve ser apresentada como um
-agente de IA que classifica intenções e decide? Recomendo usar apenas a
-automação documentada, preservando os limites da evidência.
+**Resposta:** Os nomes estáveis serão **Cidadão**, **URA CAIXA**,
+**Atendente N1**, **Analista CAIXA N2**, **Gestor do serviço CAIXA**,
+**Suporte técnico da URA**, **MTE**, **Dataprev** e **Rede SINE/SRTE**.
+Gestor e suporte são funções de sustentação, com unidade/prestador
+desconhecidos. N2 é retaguarda condicional do caso. MTE mantém competência
+administrativa e Dataprev é dependência de informação/tecnologia; não
+participam necessariamente da chamada. Rede SINE/SRTE pode ser destino
+de uma nova interação. **G03:** nove papéis delimitados; não transformar
+o mapa amplo de atores em uma sequência obrigatória de atendimento.
 
-**Resposta do respondente:** Classifico a URA CAIXA como sistema
-automatizado. O estudo descreve menu DTMF e informações padronizadas;
-não verifiquei modelo generativo nem reconhecimento de intenção por IA.
-Ela recebe a chamada e fornece conteúdo configurado. Não tem interesse
-próprio, poder de conceder benefício ou competência de recurso. Suporte
-técnico da URA sustenta o canal e Gestor do serviço CAIXA responde, no
-desenho proposto, por conteúdo e qualidade. **D03:** separar automação,
-autoridade humana e objetivos definidos pela governança do canal.
+## Rodada 4 — Onde ficam as cinco camadas e três linhas?
 
-## Rodada 4 — Quem pode decidir sobre o benefício?
+**Pergunta:** Como impedir que a matriz seja apenas uma jornada com
+emoções? Recomendo explicitar todas as faixas da aula anexada.
 
-**Pergunta do entrevistador:** Uma dúvida sobre concessão deve ser resolvida
-pelo Atendente N1, pela Dataprev ou pelo MTE? Recomendo representar a
-autoridade administrativa separadamente do processamento de dados.
+**Resposta:** As faixas serão **Evidências Físicas**, **Ações do Cidadão**,
+**Frontstage**, **Backstage** e **Processos de Suporte**. A **Linha de
+Interação** fica entre ações do cidadão e contato com o serviço; a
+**Linha de Visibilidade** separa o que se percebe das consultas e
+interpretações ocultas; a **Linha de Interação Interna** fica entre esse
+trabalho e os processos/recursos de sustentação. No telefone, áudio,
+teclado e voz são pistas perceptíveis, e não só papel ou tela. Uma base
+interna não é evidência física recebida pelo usuário. **G04:** oito
+colunas de etapas, cinco camadas e três linhas em posições explícitas.
 
-**Resposta do respondente:** O **MTE** é o ator responsável pelo serviço
-administrativo do benefício. A **Dataprev** fornece tecnologia e
-processamento de informação; isso não lhe confere a mesma competência
-institucional. **Atendente N1** e **Analista CAIXA N2** podem orientar e
-tratar questões dentro de seus acessos, mas não serão representados como
-aprovadores de concessão ou recurso. A **Rede SINE/SRTE** é atendimento
-complementar conforme competência e disponibilidade, não uma transferência
-automática da chamada. **D04:** manter os domínios decisórios separados e
-classificar o destino pela natureza da demanda.
+## Rodada 5 — O mesmo N1 pode estar nos dois lados da visibilidade?
 
-## Rodada 5 — Função analítica ou organograma comprovado?
+**Pergunta:** Devemos classificar todo o Atendente N1 como frontstage e
+todo o sistema como backstage? Recomendo classificar ações, não congelar
+pessoas inteiras em uma faixa.
 
-**Pergunta do entrevistador:** Como evitar que o mapa transforme Gestor do
-serviço CAIXA e Suporte técnico da URA em unidades oficiais inventadas?
-Recomendo sinalizar a proposta e definir o que precisa ser confirmado.
+**Resposta:** A voz e a conversa de N1 com o cidadão em E6/E7 são
+frontstage. A consulta e a interpretação feitas por N1 fora da percepção
+do cidadão são backstage, mesmo que ele continue ao telefone. A URA
+apresentando menu e resposta está no frontstage; seu tratamento interno
+não é o áudio que o usuário ouve. Analista CAIXA N2 fica como retaguarda
+condicional; sua fala direta em chamada específica é desconhecida. **G05:**
+o diagrama poderá separar N1 falando e N1 consultando, identificando que
+é o mesmo papel e não duas equipes inventadas.
 
-**Resposta do respondente:** Os dois nomes indicam funções necessárias ao
-desenho, não unidades cuja denominação ou contrato eu tenha confirmado.
-O estudo descreve **Atendente N1** e **Analista CAIXA N2**, mas também
-precisamos confirmar a organização vigente desses papéis. O mapa usará
-legenda de proposta para responsabilidades internas e relações de
-acompanhamento. A validação deve perguntar à gestão quem mantém o conteúdo,
-quem trata incidentes, quem aceita escalonamentos e que informação cada
-papel pode consultar. **D05:** atribuições propostas não serão apresentadas
-como fluxo homologado; acesso técnico não significa poder sobre o benefício.
+## Rodada 6 — Identificação e suporte técnico podem ser preenchidos por exemplo?
 
-## Rodada 6 — Quando o encaminhamento pode ser encerrado?
+**Pergunta:** O fornecimento de CPF prova autenticação forte ou consulta
+direta ao CNIS pela URA? Recomendo manter os mecanismos não verificados
+como lacunas, distinguindo consulta de sistema de suporte.
 
-**Pergunta do entrevistador:** Informar um telefone de destino basta para
-marcar a demanda como resolvida? Recomendo estados separados e um
-responsável pelo seguimento do atendimento.
+**Resposta:** Não prova. E3 contém identificação solicitada conforme o
+caso; validação, base e regra exatas são desconhecidas. O estudo cita
+**SISDE/SIISO** e informações de **MTE/Dataprev** no atendimento humano.
+Essas referências não comprovam API URA–CNIS. No backstage colocarei o
+tratamento/consulta, e no suporte os cadastros, telefonia, sistema de
+menu e mecanismo de fila, com limites de evidência. O suporte técnico e
+a gestão de capacidade são dependências funcionais, sem fornecedor,
+algoritmo ou SLA confirmado. **G06:** nenhuma biometria, login gov.br,
+discador preditivo ou plataforma específica será inventada como AS-IS.
 
-**Resposta do respondente:** Não basta. Adoto os estados **em atendimento**,
-**orientado**, **encaminhamento pendente**, **recebimento confirmado** e
-**abandono/contato interrompido**. Atendente N1 ou Analista CAIXA N2
-executam a orientação e o encaminhamento; o **Gestor do serviço CAIXA**
-acompanha a pendência do canal no modelo proposto. O destino assume apenas
-o que pertence à sua competência. Sem confirmação do destino ou da
-compreensão do próximo passo, o caso continua pendente. Abandono não prova
-resolução. Acordos, retorno e integração precisam de validação; não suponho
-API, protocolo compartilhado ou prazo de resposta já existente. **D06:**
-fechamento por evidência de orientação/recebimento, sem confundir com
-concessão ou pagamento.
+## Rodada 7 — A saída após autoatendimento significa resolução?
 
-## Rodada 7 — Acessibilidade com qual cobertura?
+**Pergunta:** Como representar E4/E5 e E7/E8 sem obrigar todos a procurar
+pessoa e voltar a ligar? Recomendo conservar as alternativas de D1 da v3.
 
-**Pergunta do entrevistador:** O ator Intermediação de acessibilidade ICOM
-pode ser ligado diretamente à URA CAIXA como solução disponível para toda
-pessoa surda? Recomendo conservar a cobertura documentada e testar a
-viabilidade do caminho para a jornada focal.
+**Resposta:** Depois de E4, a ligação pode terminar; isso só comprova
+fim de contato, não compreensão da dúvida. Se o cidadão busca pessoa,
+há o ramo E5 e, quando acessível, E6. Em E7 a orientação pode ser
+conclusiva ou inconclusiva. Em E8, encerrar, buscar outro canal e
+recontatar são possibilidades diferentes. O retorno E8 → E1 será marcado
+“se volta a ligar”. Uma indicação de MTE ou Rede SINE/SRTE é outra
+interação, sem transferência automática ou histórico unificado comprovado.
+**G07:** classificações de resultado, não estados implantados em um CRM
+nem protocolo de seguimento TO-BE do 2.1.
 
-**Resposta do respondente:** A **Intermediação de acessibilidade ICOM**
-será um ator de fronteira, com atuação documentada em SAC e rede física
-CAIXA. A ligação com esta jornada será uma relação proposta, marcada
-como dependente de validação. Não afirmarei integração direta com o menu do
-0800 726 0207. O **Cidadão** pode não ter smartphone, internet ou condições
-de usar uma videochamada. O **Gestor do serviço CAIXA** deverá validar
-alternativas com usuários e com os canais competentes. O teste é conseguir
-compreender a orientação e acessar um próximo passo viável. **D07:**
-visibilizar barreiras e fronteiras de cobertura, sem prometer acessibilidade
-universal por uma única tecnologia.
+## Rodada 8 — Quais falhas serão mantidas visíveis?
 
-## Rodada 8 — Que dados entram e quem orienta seu tratamento?
+**Pergunta:** Quais fail points precisam aparecer por etapa, com efeitos
+concretos e sem inventar medidas? Recomendo usar os sete IDs finais da v3.
 
-**Pergunta do entrevistador:** Para rastrear a jornada, o trabalho deve
-incluir CPF, gravações e casos reais? Recomendo dados mínimos e consulta
-ao papel institucional apropriado.
+**Resposta:** Registro **F01** barreira de acesso/compreensão em E1/E2;
+**F02** identificador não localizado em E3; **F03** resposta genérica em
+E4; **F04** espera e possível interrupção em E5; **F05** indisponibilidade
+de informação/sistema em E6; **F06** divergência de dados em E6; **F07**
+encaminhamento inconclusivo/circular em E7/E8. Em F05 a informação não
+foi obtida; em F06 pode haver informação incompatível que N1 não pode
+corrigir. Não usarei fila superior a vinte minutos, frequência de falha
+ou causa de infraestrutura sem evidência. **G08:** IDs e efeitos iguais
+na matriz, catálogo e diagrama, mantendo separado o que não se sabe.
 
-**Resposta do respondente:** O trabalho público usará apenas categorias e
-relações. O registro proposto no desenho terá identificador de atendimento,
-classe da dúvida, estado, destino e responsável funcional; não conterá CPF
-ou gravações no repositório. O **Encarregado de dados CAIXA** orienta e
-recebe questões de proteção de dados segundo seu papel institucional;
-não será aprovador do benefício. O **Gestor do serviço CAIXA** deverá
-confirmar com as áreas competentes o tratamento necessário, acessos e
-retenção antes de implantar qualquer registro. **D08:** mapear governança
-de dados sem criar uma base pessoal nem presumir autorização de acesso.
+## Rodada 9 — Quem nem consegue chegar ao menu desaparece do mapa?
 
-## Rodada 9 — Quem dá voz a problemas que as métricas não mostram?
+**Pergunta:** Como representar acessibilidade sem criar uma solução
+futura que pareça existente? Recomendo tratar a barreira como transversal,
+com grau de evidência explícito.
 
-**Pergunta do entrevistador:** A Ouvidoria CAIXA deve ser apenas um destino
-final de reclamação? Recomendo mostrar sua relação de aprendizagem com a
-gestão, preservando o domínio do MTE.
+**Resposta:** F01 alcança E1/E2. O estudo descreve dificuldades com áudio,
+DTMF e linguagem; a possibilidade de impedimento antes da navegação é
+inferência, não população medida. Telefone, som e teclado não significam
+acesso autônomo para qualquer pessoa. Não acrescentarei intérprete,
+videochamada, aplicativo integrado ou atendimento acessível hipotético
+como nova etapa do AS-IS. No limite da evidência física, o áudio exato
+da abertura/espera não foi transcrito nem a compreensão foi testada.
+**G09:** explicitar a lacuna e a barreira, preservando o diagnóstico sem
+preenchê-lo com desenho TO-BE.
 
-**Resposta do respondente:** A **Ouvidoria CAIXA** recebe manifestações,
-ouve o **Cidadão** e pode devolver padrões agregados ao **Gestor do serviço
-CAIXA**. Essa relação de aprendizagem é uma recomendação de uso da escuta,
-sem afirmar acesso a registros internos específicos. Uma resposta formal
-à manifestação não será confundida com correção da política ou deferimento
-de recurso. A ouvidoria não substitui o **MTE**. O mapa mostrará retorno ao
-cidadão e influência sobre melhorias, em vez de uma seta que encerra o
-problema fora da jornada. **D09:** incluir voz crítica e devolutiva, não
-apenas produtividade do atendimento.
+## Rodada 10 — O que as normas permitem afirmar?
 
-## Rodada 10 — Controle externo precisa participar de cada ligação?
+**Pergunta:** Podemos transformar a lista de leis em prova de conformidade
+ou regras de acesso aos sistemas? Recomendo usá-las para delimitar o
+contexto e as perguntas de investigação.
 
-**Pergunta do entrevistador:** O Controle externo TCU deve aprovar respostas
-da URA ou mudanças em cada caso? Recomendo uma relação de fiscalização da
-governança, fora do caminho rotineiro do atendimento.
+**Resposta:** A Lei 7.998/1990 referencia o programa, a Lei 13.709/2018
+trata de dados e a Lei 13.460/2017 de direitos do usuário. Não declaro
+conformidade, elegibilidade ou procedimento de autenticação a partir
+desses títulos. FP128/FP051 só foram citadas pelo estudo, sem leitura
+interna. O trabalho não terá CPF, gravação, credencial ou caso pessoal.
+O PDF fornecido é a fonte do método, com páginas e hash identificados,
+sem atribuí-lo ao arquivo público antigo de mesmo nome. **G10:** manter
+referências e limites, sem inferir autorização de consulta ou comprovação
+de operação atual.
 
-**Resposta do respondente:** O **Controle externo TCU** é um ator
-institucional de fiscalização, com atuação documentada no programa, mas
-não um aprovador por ligação. Sua relação será com a governança do
-**MTE** e do **Gestor do serviço CAIXA**, em nível de evidências agregadas
-e responsabilidades, conforme competência. O acórdão consultado é de
-outro período e não comprova fiscalização contínua da URA atual.
-**D10:** mostrar influência e prestação de contas sem inserir o TCU no
-fluxo operacional nem atribuir acesso irrestrito a dados pessoais.
+## Rodada 11 — Como o diagrama deriva da matriz?
 
-## Rodada 11 — Como usar poder e interesse sem inventar motivação?
+**Pergunta:** Que ligações precisam aparecer para que D seja mais que
+uma lista de caixas? Recomendo a sequência condicional E1–E8 e vínculos
+explícitos com interface, bastidor e suporte.
 
-**Pergunta do entrevistador:** Podemos atribuir resistência ou interesse
-medido a cada ator apenas pelo cargo? Recomendo hipóteses qualitativas
-ligadas a ações de escuta e validação.
+**Resposta:** Mostrarei setas entre etapas, a saída E4 → E8, o ramo
+humano E4 → E5 → E6 → E7 e o retorno condicional E8 → E1. Os vínculos
+com URA CAIXA e N1 falando indicam contato; N1 consultando e N2 indicam
+bastidor; telefonia, fila e SISDE/SIISO são suporte, com evidência
+qualificada. MTE/Dataprev serão dependências de competência/informação,
+não chamadas de API comprovadas. A Rede SINE/SRTE só aparece como
+destino externo se buscado. F05/F06 não podem virar consulta bem-sucedida
+automaticamente no desenho. **G11:** relações rotuladas, legenda de
+evidência e tabela de correspondência com C.
 
-**Resposta do respondente:** Não atribuirei intenções pessoais. **MTE** e
-**Gestor do serviço CAIXA** têm poder relevante sobre domínios diferentes;
-precisam validar fronteiras. **Dataprev** e **Suporte técnico da URA** têm
-influência técnica, a discutir com limites de acesso e continuidade.
-**Atendente N1**, **Analista CAIXA N2**, **Cidadão** e **Intermediação de
-acessibilidade ICOM** precisam ser ouvidos sobre trabalho real e barreiras.
-**Ouvidoria CAIXA**, **Encarregado de dados CAIXA** e **Controle externo
-TCU** trazem perspectivas de controle e direitos. A **Rede SINE/SRTE**
-deve validar o aceite do encaminhamento. A **URA CAIXA** é um sistema e
-não recebe preferências humanas. **D11:** classificar poder/interesse como
-hipóteses e associar cada classificação a uma ação concreta de engajamento.
+## Rodada 12 — O que fica decidido e o que continua desconhecido?
 
-## Rodada 12 — Que formato torna as responsabilidades verificáveis?
+**Pergunta:** Há etapa ou ator que surgirá na matriz sem ter sido
+discutido? Recomendo conferir nomes e preservar desconhecidos reais.
 
-**Pergunta do entrevistador:** Uma lista de treze nomes é suficiente ou
-precisamos mostrar relações e prestação de contas? Recomendo inventário,
-RACI por atividade e Mermaid com setas rotuladas, usando os mesmos IDs.
+**Resposta:** Todos os oito nomes de etapas foram fixados na rodada 2,
+os nove atores na rodada 3, os recursos e as camadas nas rodadas 4–6 e
+as sete falhas na rodada 8. Estão decididos recorte, linhas, classificação
+de ações, alternativas e relações. Permanecem desconhecidos arquitetura
+de identificação, interfaces de consulta, plataforma de fila, registros,
+papel N2 em chamada específica e continuidade de histórico entre canais.
+As estimativas de tempo e o recontato do estudo não serão convertidos em
+medidas atuais de jornada ou resolução. **G12:** o diagnóstico encerra
+com limites explícitos; não haverá ação ou tecnologia adicional em C/D
+sem suporte neste registro e na pesquisa.
 
-**Resposta do respondente:** Usarei os três. O inventário terá categoria,
-papel, entrada, saída e limite. Na RACI, cada atividade terá pelo menos um
-R e exatamente um A; R é quem executa e A responde pelo resultado da
-atividade, dentro de seu domínio. O **Gestor do serviço CAIXA** será A nas
-atividades propostas do canal; **MTE** em decisão administrativa;
-**Ouvidoria CAIXA**, **Intermediação de acessibilidade ICOM** e **Controle
-externo TCU** respondem por suas próprias atividades, sem subordinação
-institucional inventada. Setas contínuas descreverão relações documentadas
-no caso e setas tracejadas marcarão recomendações ou dependências a validar.
-**D12:** relações explícitas e responsabilidade por atividade, com legenda
-de evidência e preservação das competências externas.
+## Índice das decisões
 
-## Rodada 13 — O que está decidido e o que continua em aberto?
-
-**Pergunta do entrevistador:** Há algum ator no mapa que não apareceu na
-entrevista ou alguma pendência tratada indevidamente como fato? Recomendo
-conferir o inventário e manter ações de validação com responsáveis.
-
-**Resposta do respondente:** Todos os treze atores foram nomeados na
-rodada 2 e discutidos nas rodadas seguintes. Estão decididos propósito,
-recorte, papéis, estados, formatos e limites. Permanecem em aberto unidade
-interna e prestador, regra do indicador histórico, mecanismo real de aceite
-entre canais e acesso viável sem smartphone. O **Gestor do serviço CAIXA**
-é responsável proposto pela articulação dessas verificações; **MTE** e
-**Rede SINE/SRTE** validam as partes de sua competência. A escuta do
-**Cidadão** e a consulta a **Intermediação de acessibilidade ICOM** são
-necessárias antes de declarar acesso resolvido. Não atribuirei um novo ator
-ao mapa sem reabrir esta decisão. **D13:** a autoentrevista está encerrada
-com fronteira decisória definida; as pendências seguem explícitas para
-validação institucional futura.
-
-## Decisões que o mapa deve preservar
-
-D01 delimita a jornada; D02 fixa A01–A13; D03 caracteriza a automação;
-D04 separa competência; D05 qualifica papéis propostos; D06 define estados;
-D07 restringe cobertura acessível; D08 limita dados; D09 integra escuta;
-D10 posiciona controle; D11 orienta engajamento; D12 define relações/RACI;
-D13 registra a conclusão e as pendências. Nenhuma resposta desta sessão
-equivale a entrevista de campo ou homologação da operação CAIXA.
+G01 recorte/tempo; G02 etapas; G03 atores; G04 camadas/linhas; G05 ações
+visíveis/ocultas; G06 identificação/suporte; G07 saídas e loops; G08 falhas;
+G09 barreiras; G10 fontes/normas; G11 diagrama; G12 limites finais.
+Este é um exercício documental com autoentrevista técnica, não relato de
+entrevista de campo com servidores ou de ligação realizada à CAIXA.

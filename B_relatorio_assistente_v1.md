@@ -1,78 +1,82 @@
-# Pesquisa inicial v1 — a rede por trás da chamada
+# Pesquisa inicial v1 — a operação por trás do atendimento telefônico
 
-**Produção:** agente Codex, pesquisa inicial, 13/11/2026.
-**Serviço:** Atendimento ao Seguro-Desemprego pela URA da CAIXA, canal
-CAIXA Cidadão 0800 726 0207. Esta é a primeira síntese, anterior às auditorias.
+**Serviço:** Atendimento ao Seguro-Desemprego pela URA CAIXA, canal
+CAIXA Cidadão 0800 726 0207. **Autoria:** agente Codex, 14/11/2026.
+Esta primeira síntese organiza a pesquisa antes das duas auditorias.
 
-## 1. Problema e delimitação
+## 1. Recorte e evidência disponível
 
-O atendimento telefônico da CAIXA aparece como ponto central para esclarecer
-status, bloqueios e próximos passos. O objeto é a interação informacional:
-o trabalhador procura saber o que aconteceu com sua parcela e qual ação
-deve executar. O mapa precisa explicar por que falar com uma instituição
-nem sempre significa que ela pode decidir sobre a demanda apresentada.
+A demanda começa quando o cidadão precisa compreender a situação do
+benefício e procura o canal telefônico. O estudo da disciplina descreve
+navegação por menu, apresentação de identificação, informação automática,
+tentativa de atendimento humano e possíveis respostas inconclusivas. A
+observação descrita pelos autores utiliza dados de outubro–dezembro de
+2025. Esta pesquisa não realizou ligação de teste nem entrevista com
+servidores; estrutura a operação relatada e confronta fronteiras com
+fontes institucionais públicas [R2, páginas PDF 12–15].
 
-O estudo disponibilizado na disciplina descreve a separação entre o canal
-da CAIXA, as decisões do MTE e informações processadas pela Dataprev
-[S1, páginas PDF 5–7]. Sua análise do trimestre outubro–dezembro de 2025
-apresenta 670.685 chamadas e 12,11% de recontato por CPF no mesmo dia.
-O recontato é um sinal relevante de dificuldade de resolução e indica
-oportunidade de examinar a continuidade da jornada. Esses valores são
-atribuídos ao estudo; não foram produzidos por esta pesquisa.
+O serviço publicado pelo MTE e a FAQ CAIXA distinguem o domínio do
+benefício e seus canais de consulta. Isso confirma que informar um status
+na CAIXA não é o mesmo que decidir concessão ou recurso no MTE [R3, R4].
+O blueprint deve começar na experiência do cidadão e abrir o trabalho
+invisível que sustenta cada contato, seguindo a aula anexada [R1].
 
-## 2. Inventário inicial de atores
+## 2. Sequência operacional preliminar
 
-| Ator | Categoria | Participação na jornada | Dependência principal |
-| --- | --- | --- | --- |
-| Cidadão | Usuário direto | Apresenta a dúvida, navega no canal e recebe orientação | Informação compreensível e acesso ao canal |
-| URA CAIXA | Sistema automatizado | Apresenta menus e respostas padronizadas | Conteúdo e disponibilidade técnica |
-| Atendente N1 | Operador humano | Faz triagem e consultas iniciais | Acesso às informações e orientação operacional |
-| Analista CAIXA N2 | Especialista humano | Trata exceções que ultrapassam a triagem inicial | Dados e competências de outras instituições |
-| Gestor do serviço CAIXA | Gestão | Organiza atendimento, conteúdo e capacidade | Conhecimento dos problemas recorrentes |
-| Suporte técnico da URA | Suporte tecnológico | Sustenta o funcionamento do canal | Diagnóstico de incidentes e mudanças autorizadas |
-| MTE/Dataprev | Rede institucional e de dados | Disponibiliza decisões e informações necessárias à orientação | Coordenação entre bases e instituições |
-| Rede SINE/SRTE | Atendimento complementar | Oferece alternativa para questões do benefício | Encaminhamento com informação suficiente |
-| Ouvidoria CAIXA | Escuta e controle | Recebe manifestações e sinaliza problemas persistentes | Histórico do atendimento e resposta da instituição |
+| Momento na ótica do cidadão | Interface e trabalho de atendimento | Dificuldade identificada |
+| --- | --- | --- |
+| Procura informação e liga | Telefone estabelece contato com a URA CAIXA | Acesso depende do canal e da capacidade de compreender áudio |
+| Navega e fornece identificação | Menu solicita escolhas e o cidadão informa CPF, conforme o estudo | Erro de opção ou identificação impede seguir a demanda |
+| Ouve informação automática | Mensagem padronizada responde sobre o benefício | Resposta pode não explicar a causa ou o próximo passo |
+| Busca pessoa e espera | O caso descreve tentativa de transferência para atendimento humano | Espera e incerteza podem levar à desistência |
+| Explica a dúvida ao atendente | Atendente N1 consulta informações e pode depender de Analista CAIXA N2 | Consultas sequenciais e limites de competência |
+| Recebe orientação e sai ou tenta novamente | Resultado conclusivo, encaminhamento ou recontato | Encaminhamento entre instituições sem solução clara |
 
-A descrição de N1 e N2 está ancorada no estudo de caso [S1, páginas PDF 5–6].
-Gestão e suporte técnico foram incluídos por sua função na sustentação do
-canal; o levantamento ainda não identifica a unidade organizacional nem
-eventual prestador contratado. A página oficial do MTE aponta canais
-digitais e telefone 158 para o serviço do Seguro-Desemprego [S3]. A FAQ da
-CAIXA inclui o atendimento telefônico entre os meios de consulta e orienta
-que dúvidas de concessão e valor sejam dirigidas ao MTE [S2].
+Essa sequência é condicional: não significa que toda chamada passe por
+todas as fases ou termine com novo contato. O mapa do 2.1 identifica
+atores úteis para investigar a operação; suas propostas de acompanhamento
+não constituem, por si, um procedimento implantado [R5].
 
-## 3. Relações e interesses
+## 3. Palco, bastidor e sustentação
 
-A relação mais visível é Cidadão → URA CAIXA. Quando a resposta automática
-não basta, o estudo descreve a atuação humana de Atendente N1 e Analista
-CAIXA N2. Esses profissionais ficam entre a demanda do usuário e as
-informações institucionais: melhorar o menu sem melhorar essa conexão pode
-apenas tornar mais rápida uma resposta insuficiente.
+O cidadão percebe o telefone, as mensagens do menu e a voz humana quando
+há atendimento. A voz é evidência perceptível de uma ação de frontstage.
+O estudo menciona consulta a SISDE/SIISO e informações relacionadas a
+MTE/Dataprev durante o tratamento humano [R2, página PDF 13]. Essas
+consultas ficam fora da vista do cidadão, ainda que ele permaneça na linha.
+A presença de uma base na descrição não comprova uma API direta entre ela
+e a URA.
 
-O Gestor do serviço CAIXA precisa equilibrar capacidade operacional e
-qualidade da orientação. A pressão por chamadas curtas pode entrar em
-tensão com a necessidade de explicar uma pendência. Essa é uma hipótese de
-incentivo para investigação, não uma medição de metas ou conduta de equipes.
-O Suporte técnico da URA tende a observar incidentes de disponibilidade,
-enquanto a Ouvidoria CAIXA recebe sinais que não aparecem na contagem de
-ligações. Cruzar essas perspectivas permite formular perguntas sobre quem
-se responsabiliza pelo caso quando ele sai do canal inicial.
+O suporte envolve telefonia, funcionamento do sistema de menu, mecanismos
+de fila e acesso às informações necessárias. As ferramentas concretas,
+seus contratos, telas e algoritmos não foram levantados nesta pesquisa.
+O Gestor do serviço CAIXA e o Suporte técnico da URA são funções de
+sustentação a investigar, sem identificação de unidade específica. O MTE
+mantém seu domínio administrativo; Dataprev é uma dependência de
+informação e tecnologia, não atendente direto em cada ligação.
 
-## 4. Questões para a próxima etapa
+## 4. Falhas e limites para a próxima revisão
 
-O levantamento sugere acompanhar encaminhamentos, identificar o responsável
-por conteúdo e comparar dificuldades operacionais com dificuldades de
-competência institucional. Antes de definir a RACI, faltam validação dos
-responsáveis internos, detalhamento de acessibilidade e melhor separação
-entre atores técnicos e decisores. A metodologia da aula recomenda ir além
-da lista, examinando poder, interesse, incentivos e relações [S4]. A
-autoentrevista deverá transformar esse material em decisões de escopo e
-governança, preservando as limitações das fontes.
+Três fricções merecem aprofundamento: um menu que o usuário não compreende,
+uma espera cuja conclusão não consegue prever e uma resposta que apenas
+o encaminha a outra instituição. A página PDF 15 do estudo descreve
+barreiras de acessibilidade e a página 14 relaciona indisponibilidade,
+identificação não localizada e divergências. Ainda falta ligar essas
+exceções a cada camada e ao efeito percebido na jornada.
 
-## Fontes consultadas
+A Lei 7.998/1990 constitui referência do programa; normas internas citadas
+pelos autores não foram acessadas. O levantamento ainda precisa organizar
+as demais referências aplicáveis ao atendimento e ao tratamento de dados.
+Também é necessário decidir a representação das linhas divisórias, a
+separação entre navegação e identificação e o limite de uma conclusão
+documental sobre o funcionamento em novembro de 2026. Essas questões
+seguirão para auditoria, em vez de serem preenchidas com arquitetura
+técnica presumida ou soluções TO-BE.
 
-- **S1:** [Estudo de caso da disciplina](https://github.com/alexlopespereira/idp_governodigital/blob/main/trabalho_final/seguro-desemprego-ura-caixa.pdf), páginas PDF 3–7 e 12–14; leitura do PDF disponível, dados de 2025.
-- **S2:** [FAQ Seguro-Desemprego — CAIXA](https://www.caixa.gov.br/beneficios-trabalhador/seguro-desemprego/perguntas-frequentes/Paginas/default.aspx), seção de consulta e concessão; conteúdo identificado no índice de busca, com redirecionamento ao tentar abrir a página.
-- **S3:** [Solicitar o Seguro-Desemprego — MTE](https://www.gov.br/pt-br/servicos/solicitar-o-seguro-desemprego), etapas de solicitação e acompanhamento; página acessível, modificada em 25/09/2026.
-- **S4:** [Aula 2 — Diagnóstico de Serviço Público](https://github.com/alexlopespereira/idp_governodigital/blob/main/pdfs/aula02.pdf), páginas PDF 31–40; metodologia de atores e relações.
+## Referências
+
+- **R1:** aula04.pdf fornecida pelo aluno, 51 páginas, páginas PDF 24–40; método de Service Blueprint.
+- **R2:** [Estudo do atendimento via URA](https://github.com/alexlopespereira/idp_governodigital/blob/main/trabalho_final/seguro-desemprego-ura-caixa.pdf), páginas PDF 5–6 e 12–15; diagnóstico de 2025.
+- **R3:** [Solicitar o Seguro-Desemprego — MTE](https://www.gov.br/pt-br/servicos/solicitar-o-seguro-desemprego), responsável, etapas e canais; consulta em 14/11/2026.
+- **R4:** [FAQ Seguro-Desemprego — CAIXA](https://www.caixa.gov.br/beneficios-trabalhador/seguro-desemprego/perguntas-frequentes/Paginas/default.aspx), consulta e competência sobre concessão; conteúdo institucional indexado consultado em 14/11/2026.
+- **R5:** [Mapa de atores do exercício 2.1](https://github.com/contatomaycon/transformacao-digital/blob/main/exercicios/2.1/C_mapa_atores.md), origem dos papéis e das questões de pesquisa.

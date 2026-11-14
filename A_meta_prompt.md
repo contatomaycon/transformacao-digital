@@ -1,57 +1,59 @@
-# Meta-prompt — pesquisa sobre atores do atendimento do Seguro-Desemprego
+# Meta-prompt — operação do atendimento ao Seguro-Desemprego pela URA CAIXA
 
-## Contexto e propósito
+## Contexto e serviço focal
 
-Elabore um prompt para um assistente de deep research realizar uma pesquisa
-sobre o **Atendimento ao Seguro-Desemprego pela Unidade de Resposta Audível
-(URA) da Caixa Econômica Federal**, no canal telefônico CAIXA Cidadão
-**0800 726 0207**. O órgão responsável pelo canal analisado é a CAIXA; a
-gestão e as decisões sobre o benefício envolvem o Ministério do Trabalho e
-Emprego (MTE). O problema a investigar é a dificuldade de entregar uma
-orientação conclusiva sem fazer o cidadão circular entre instituições.
+Elabore um prompt para um assistente de deep research pesquisar a operação
+do **Atendimento ao Seguro-Desemprego pela Unidade de Resposta Audível
+(URA) da Caixa Econômica Federal**, no **CAIXA Cidadão 0800 726 0207**.
+O resultado sustentará um **Service Blueprint AS-IS**, retratando como o
+atendimento é descrito nas fontes disponíveis, e não uma solução futura.
+O exercício continua o [mapa de atores do 2.1](https://github.com/contatomaycon/transformacao-digital/blob/main/exercicios/2.1/C_mapa_atores.md), mas
+suas recomendações de melhoria não podem ser convertidas em fatos atuais.
 
-A pesquisa subsidiará um mapa de atores, e não um projeto de chatbot. O
-recorte começa na tentativa de obter informação por telefone e termina com
-orientação compreendida, encaminhamento identificado ou abandono. Aprovar
-o benefício, julgar recursos e efetuar o pagamento são dependências externas
-da jornada de atendimento, não decisões tomadas pelo menu de voz.
+## Método e material de contexto
 
-## Material de partida
+Use como método a aula fornecida pelo aluno, **Aula 04 — Desenho de Serviços
+Centrado no Usuário**, 51 páginas, criada em 12/11/2026, especialmente as
+páginas PDF 24–40. Ela diferencia evidências físicas, ações do cidadão,
+frontstage, backstage e processos de suporte, separados pelas linhas de
+interação, visibilidade e interação interna. O arquivo de referência tem
+SHA-256 `b6c0572adc13e0ad6c01473246ae0bd9136bfdf382c72cc40a4efe1c48510007`.
+Ele não deve ser confundido com o PDF público mais antigo de mesmo nome.
 
 Considere o [estudo de caso da disciplina](https://github.com/alexlopespereira/idp_governodigital/blob/main/trabalho_final/seguro-desemprego-ura-caixa.pdf),
-especialmente as páginas PDF 3–7 e 12–14, e a
-[aula 2](https://github.com/alexlopespereira/idp_governodigital/blob/main/pdfs/aula02.pdf),
-especialmente as páginas PDF 31–40. O primeiro documento analisa dados de
-2025 e apresenta também propostas futuras; essa temporalidade precisa
-permanecer visível. Use a data de referência de 13/11/2026 para a verificação
-complementar de canais oficiais.
+sobretudo as páginas PDF 5–6 e 12–15. A data da pesquisa documental é
+14/11/2026, mas o diagnóstico operacional do estudo utiliza dados de 2025.
+O prompt gerado deve conservar essa diferença e identificar lacunas que
+exigiriam observação ou entrevista de campo.
 
-## Perguntas que o prompt deve orientar
+## Perguntas e escopo da pesquisa
 
-Solicite identificação de usuários diretos, operadores humanos, sistemas,
-gestores, responsáveis por dados, fornecedores e órgãos de controle. Para
-cada ator, peça papel, categoria, poder, interesse, incentivo, dependência,
-limite de decisão e pontos de entrada e saída. Investigue quem atende, quem
-decide, quem pode corrigir uma informação e quem responde por um
-encaminhamento incompleto. Inclua necessidades de acessibilidade e vozes
-críticas, evitando tomar a perspectiva gerencial como a única possível.
+Peça etapas na ótica do cidadão, começando onde ele percebe a necessidade
+de informação: tentativa de contato, navegação, identificação solicitada,
+resposta automática, espera, contato humano e resultado ou recontato.
+Para cada etapa, solicite o que é percebido ou ouvido, a ação visível do
+serviço, o trabalho oculto e as dependências técnicas/organizacionais.
+Exija análise de onde o mesmo atendente cruza a linha de visibilidade.
 
-## Critérios de evidência
+Solicite evidências físicas ou perceptíveis, inclusive telefone, teclado,
+áudios e informação recebida, sem inventar gravações, protocolos ou telas.
+Peça os normativos pertinentes ao programa, ao atendimento e aos dados
+pessoais, com links oficiais e limites de interpretação. Inclua fail
+points de navegação, identificação, espera, consulta e encaminhamento.
 
-O prompt gerado deve exigir fontes primárias com links e localização do
-trecho relevante. Deve distinguir fato institucional verificado, descrição
-do estudo acadêmico e hipótese de desenho a validar. Oriente o assistente a
-registrar páginas inacessíveis e divergências entre fontes, sem inventar
-contratos, fornecedores, prazos de atendimento ou APIs existentes. Números
-históricos precisam de período, definição e limitações; recontato não deve
-ser tratado automaticamente como causa comprovada de falha.
+## Regras de evidência e formato de saída
 
-## Saída e possibilidade de contestação
+O prompt deve exigir relatório estruturado com pelo menos 300 palavras,
+fontes e páginas, sequência de etapas, cinco camadas, linhas divisórias,
+gargalos e perguntas para auditoria. Identifique separadamente descrição
+do estudo, confirmação institucional, inferência funcional e detalhe não
+verificado. Não pressuponha CNIS consultado diretamente pela URA, API
+integrada, reconhecimento por IA, biometria ou login gov.br nesse telefone.
+Identificação informada pelo cidadão não comprova autenticação forte.
 
-Peça um relatório estruturado com síntese do recorte, inventário de atores,
-relações, tensões, lacunas e referências. Exija pelo menos 300 palavras e
-afirmações rastreáveis. Inclua no prompt uma instrução para receber auditoria
-posterior: cada crítica deverá ser corrigida, defendida com evidência ou
-mantida explicitamente em aberto. A pesquisa deve preservar dúvidas úteis
-para a autoentrevista de decisão e para uma futura matriz RACI, sem
-apresentar atribuições propostas como organograma oficial da CAIXA.
+Oriente o assistente a aceitar duas rodadas de crítica: cada achado deverá
+ser corrigido, defendido com evidência ou mantido explicitamente em aberto.
+O relatório final subsidiará uma autoentrevista de decisão, uma matriz de
+no mínimo cinco etapas com as cinco camadas e um diagrama de relações
+coerente com o AS-IS. O objetivo é tornar o bastidor visível ao diagnóstico,
+sem transferir a complexidade institucional para o cidadão.

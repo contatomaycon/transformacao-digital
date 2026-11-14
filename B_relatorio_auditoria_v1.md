@@ -1,81 +1,79 @@
-# Auditoria 1 — responsabilidades, evidência e usuários omitidos
+# Auditoria 1 — separar ações, mecanismos e evidências da operação
 
-**Objeto:** `B_relatorio_assistente_v1.md`, versão inicial de 13/11/2026.
-**Autoria:** revisão crítica do agente Codex, em etapa separada da pesquisa.
-A auditoria examina conteúdo e evidência, sem contar formatação como falha.
+**Objeto:** pesquisa v1 do exercício 3.1. **Revisor:** agente Codex,
+em etapa crítica posterior à síntese inicial, 14/11/2026.
+O exame é de conteúdo: não considera diferenças de estilo como falhas.
 
-## A1-01 — MTE e Dataprev foram agrupados como um único ator
+## A1-01 — A tabela mistura interface e trabalho oculto
 
-**Trecho auditado:** a linha da tabela intitulada **“MTE/Dataprev”** reúne
-“decisões e informações necessárias à orientação”. Isso impede identificar
-quem responde por uma decisão de benefício e quem fornece processamento ou
-informação. É uma deficiência substantiva do inventário: uma relação de
-dependência entre duas organizações desaparece quando ambas viram um nó.
+**Trecho:** na coluna “Interface e trabalho de atendimento”, o momento
+“Explica a dúvida ao atendente” reúne a conversa e as consultas de N1.
+O texto reconhece que consultas ficam invisíveis, mas a sequência não
+liga cada ação visível ao trabalho interno e à dependência de suporte.
+Essa lacuna impede usar a tabela como base operacional consistente para
+as cinco camadas do blueprint.
 
-O [MTE identifica o Seguro-Desemprego como serviço de sua responsabilidade](https://www.gov.br/pt-br/servicos/solicitar-o-seguro-desemprego).
-O estudo de caso, páginas PDF 5–6, descreve separadamente MTE e Dataprev.
-O relatório deve criar duas linhas, conservar a distinção entre decisão
-administrativa e infraestrutura tecnológica e evitar supor que um
-processador de dados possui a mesma competência do gestor do benefício.
-**Aceitação:** duas identidades, papéis separados e relação explícita entre elas.
+A aula fornecida, páginas PDF 29–32 e 40, exige distinguir a ação que
+cruza a interface e o trabalho oculto, inclusive quando executados pelo
+mesmo profissional. A v2 deve separar Atendente N1 falando com o cidadão
+de Atendente N1 consultando informações, e distinguir a consulta como
+ação de bastidor dos sistemas que a sustentam. Não basta colocar o ator
+inteiro acima ou abaixo da linha de visibilidade.
+**Aceite:** sequência com ações do cidadão, evidência percebida,
+frontstage, backstage e suporte rastreáveis por etapa.
 
-## A1-02 — A métrica de recontato tem definição insuficiente
+## A1-02 — Navegação e identificação foram comprimidas
 
-**Trecho auditado:** “12,11% de recontato por CPF no mesmo dia”. A expressão
-não informa se o denominador são chamadas, CPFs únicos ou casos. Tampouco
-explica se a repetição de um identificador corresponde à mesma dúvida. Isso
-prejudica a interpretação do problema que orientará o mapa.
+**Trecho:** “Navega e fornece identificação”, acompanhado de “Erro de
+opção ou identificação impede seguir a demanda”. Há dois eventos de
+natureza diferente: escolha de menu e fornecimento de dado solicitado.
+Agrupá-los apaga o ponto onde um identificador não localizado interrompe
+a tentativa, descrito na página PDF 14 do estudo de caso.
 
-O [estudo de caso](https://github.com/alexlopespereira/idp_governodigital/blob/main/trabalho_final/seguro-desemprego-ura-caixa.pdf),
-páginas PDF 2–4 e 7–9, associa o indicador a chamadas adicionais no período.
-A v1 o atribui corretamente ao estudo, mas a base operacional original não
-foi disponibilizada nesta coleta para recalcular a regra. A leitura de
-recontato como indício é defensável; inferir causa, identidade da demanda
-ou proporção de pessoas seria exceder a evidência.
-**Aceitação:** registrar período e unidade, delimitar o que é relato dos
-autores e manter cálculo e causalidade como pendências de validação.
+Também é preciso impedir que “identificação” seja lida como autenticação
+forte ou consulta direta ao CNIS. O estudo mostra fornecimento de CPF e
+casos de não localização, mas não documenta a arquitetura exata da
+validação. A v2 deve separar os momentos, explicitar o limite e distinguir
+o áudio da solicitação da atividade interna que trata o dado.
+**Aceite:** duas etapas, falhas específicas e mecanismo não comprovado
+marcado como desconhecido, sem preencher a lacuna com exemplo do tutorial.
 
-## A1-03 — Faltam responsáveis verificáveis pelos encaminhamentos
+## A1-03 — As falhas não estão ligadas a evento e consequência
 
-**Trecho auditado:** “faltam validação dos responsáveis internos” e a
-dependência do Gestor do serviço CAIXA de “conhecimento dos problemas
-recorrentes”. O relatório reconhece a lacuna, porém não define qual pergunta
-de validação fecha o problema. Isso permitiria que o mapa atribuísse
-aprovações a uma unidade inventada ou confundisse manutenção técnica com
-autoridade sobre a concessão.
+**Trecho:** “Ainda falta ligar essas exceções a cada camada e ao efeito
+percebido na jornada”. A própria v1 admite o ponto. Indisponibilidade,
+identificador não localizado e divergência aparecem no final, enquanto
+a tabela só mostra menu, espera e saída inconclusiva. Isso deixaria os
+fail points mais concretos fora do diagnóstico que sustenta a Parte C.
 
-A descrição de N1/N2 no estudo é evidência acadêmica contextual; não é um
-organograma operacional vigente. A v2 precisa marcar as atribuições de
-Gestor do serviço CAIXA e Suporte técnico da URA como funções analíticas,
-identificar a evidência disponível e propor um aceite verificável para a
-transferência: destino, motivo, orientação e responsável pelo seguimento.
-**Aceitação:** distinguir papel conhecido, responsabilidade proposta e
-pendência de confirmação institucional, sem inventar SLA ou integração.
+O estudo, páginas PDF 14–15, fornece situações suficientes para mapear
+gatilho, etapa atingida e efeito: consulta interrompida, orientação
+genérica, busca de outro canal ou repetição de contato. A v2 deve criar
+identificadores de falha e separar ocorrência descrita de risco inferido.
+Não deve inventar frequência, duração superior a vinte minutos ou causa
+técnica específica. **Aceite:** cada falha ligada a etapa, evidência,
+consequência e limite de verificação.
 
-## A1-04 — Acessibilidade e governança de dados ficaram fora da rede
+## A1-04 — O enquadramento normativo ficou incompleto
 
-**Trechos auditados:** o único usuário é “Cidadão” e acessibilidade aparece
-apenas como questão para a próxima etapa. A ausência é material: um menu
-de voz não cobre, por si, pessoas surdas, usuários sem internet ou pessoas
-que não conseguem navegar no menu. A persona da página PDF 13 do estudo
-ilustra essa barreira, mas não substitui escuta de pessoas reais.
+**Trecho:** “O levantamento ainda precisa organizar as demais referências
+aplicáveis ao atendimento e ao tratamento de dados”. Não é uma questão
+cosmética: a solicitação de identificador e o acesso a informações de
+benefício dependem de competências e de tratamento de dados, enquanto
+acessibilidade é parte da experiência de serviço público.
 
-A [CAIXA descreve atendimento em Libras](https://www.caixa.gov.br/atendimento/libras/Paginas/default.aspx)
-ligado ao SAC e à rede física. Isso justifica investigar um ator de
-intermediação acessível, sem afirmar integração automática com a URA. A
-[página institucional de privacidade](https://www.caixa.gov.br/privacidade/Paginas/default.aspx)
-também identifica o papel de encarregado de dados, relevante quando a
-jornada utiliza identificadores e histórico de contatos.
-**Aceitação:** incluir essas funções, suas limitações e relações; registrar
-alternativa sem smartphone como necessidade a validar, não como canal já
-integrado. Considerar a Ouvidoria CAIXA como voz crítica e não só depósito
-de reclamações, seguindo a aula 2, páginas PDF 35–36.
+A v2 deve identificar, por fonte oficial, Lei 7.998/1990, Lei 13.709/2018
+e Lei 13.460/2017 como referências de programa, dados e direitos do usuário.
+Isso não autoriza declarar conformidade do canal ou interpretar uma regra
+de elegibilidade individual. Os normativos internos FP128/FP051 citados
+no estudo devem permanecer referências secundárias sem conteúdo presumido.
+**Aceite:** fonte e finalidade delimitadas, sem afirmar leitura de documento
+interno ou procedimento de autenticação que não foi observado.
 
-## Encaminhamento para a v2
+## Verificações que não constituem falha
 
-Os quatro achados exigem mudança de conteúdo. A v2 deverá apresentar uma
-matriz com o tratamento individual de A1-01 a A1-04: corrigido, defendido
-com evidência ou em aberto com ação de verificação. Deve preservar as
-incertezas que não podem ser resolvidas por pesquisa documental. A
-revisão está aprovada para orientar nova pesquisa, não para certificar
-contratos, fluxos internos ou resultados atuais do serviço.
+A v1 preservou o período de 2025, não disse ter feito pesquisa de campo e
+não apresentou as propostas de continuidade do 2.1 como operação implantada.
+Esses acertos devem permanecer. A v2 deverá tratar A1-01 a A1-04 em uma
+matriz explícita de correção, defesa com evidência ou pendência verificável,
+e conservar os desconhecidos que a pesquisa documental não consegue fechar.
